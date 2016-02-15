@@ -8,8 +8,8 @@ MAINTAINER jiangyu.zjy <jiangyu.zjy@alibaba-inc.com>
 #install utilities
 #RUN yum -y install wget unzip gzip nmap telnet openssh-server.x86_64 openssh-clients perl-Data-Dumper-2.145-3.el7.x86_64 && echo #"root:alios6u2" | chpasswd && service sshd start
 
-ADD JDK /home/admin/jdk
-ADD TOMCAT /home/admin/tomcat
+ADD ./JDK /home/admin/jdk
+ADD ./TOMCAT /home/admin/tomcat
 ENV HAVA_HOME /home/admin/jdk
 ENV CATALINA_HOME /home/admin/tomcat
 
